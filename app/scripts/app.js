@@ -10,5 +10,3 @@
  */
 angular
   .module('Appointment1App', ['ui.calendar']);
-
-
