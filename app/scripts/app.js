@@ -9,6 +9,6 @@
  * Main module of the application.
  */
 angular
-  .module('appointment1App', []);
+  .module('Appointment1App', ['ui.calendar']);
 
 
