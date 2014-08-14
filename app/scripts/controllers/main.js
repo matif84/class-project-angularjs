@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name appointment1App.controller:MainCtrl
+ * @name Appointment1app.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the appointment1App
+ * Controller of the Appointment1app
  */
-angular.module('Appointment1App')
-  .controller('MainCtrl', function ($scope) {
+angular.module('Appointment1app', ["firebase"])
+  .controller('MainCtrl', function ($scope,$firebase) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

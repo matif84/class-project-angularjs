@@ -2,13 +2,20 @@
 
 /**
  * @ngdoc function
- * @name appointment1App.controller:AppointmentmakerCtrl
+ * @name Appointment1app.controller:AppointmentmakerCtrl
  * @description
  * # AppointmentmakerCtrl
- * Controller of the appointment1App
+ * Controller of the Appointment1app
  */
-angular.module('Appointment1App')
-  .controller('AppointmentMakerCtrl', function ($scope) {
+angular.module('Appointment1app',["firebase"]);
+  .controller('AppointmentMakerCtrl', function ($scope,$firebase) {
+  
+var Firebase = require("firebase");
+
+    var ref = new Firebase("http://dazzling-fire-6922.firebaseIO.com");
+
+      // create a synchronized array for use in our HTML code
+    $scope.messages = sync.$asArray();
 
         $scope.newAppointment = {
             name: ""

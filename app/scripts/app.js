@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc overview
- * @name appointment1App
+ * @name Appointment1app
  * @description
- * # appointment1App
+ * # Appointment1app
  *
  * Main module of the application.
  */
 angular
-  .module('Appointment1App', ['ui.calendar']);
+  .module('Appointment1app', 'firebase',['ui.calendar', 'firebase']);

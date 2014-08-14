@@ -3,7 +3,7 @@
 describe('Controller: AppointmentmakerCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('appointment1App'));
+  beforeEach(module('Appointment1app'));
 
   var AppointmentmakerCtrl,
     scope;
