@@ -8,5 +8,4 @@
  *
  * Main module of the application.
  */
-angular
-  .module('Appointment1app', 'firebase',['ui.calendar', 'firebase']);
+angular.module('Appointment1app', ['ui.calendar', 'angularfire.firebase', 'firebase']);

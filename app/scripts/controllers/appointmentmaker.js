@@ -7,15 +7,13 @@
  * # AppointmentmakerCtrl
  * Controller of the Appointment1app
  */
-angular.module('Appointment1app',["firebase"]);
-  .controller('AppointmentMakerCtrl', function ($scope,$firebase) {
-  
-var Firebase = require("firebase");
+angular.module('Appointment1app')
+    .controller('AppointmentMakerCtrl', ['$scope', 'syncData', function ($scope, syncData) {
 
-    var ref = new Firebase("http://dazzling-fire-6922.firebaseIO.com");
+        var ref = syncData('/messages');
 
-      // create a synchronized array for use in our HTML code
-    $scope.messages = sync.$asArray();
+        // create a synchronized array for use in our HTML code
+        $scope.messages = ref.$asArray();
 
         $scope.newAppointment = {
             name: ""
@@ -23,6 +21,6 @@ var Firebase = require("firebase");
 
         //Check out https://github.com/tewen/angular-fire-polls
         $scope.onSubmitAppointment = function () {
-            console.log("SENDING " + JSON.stringify($scope.newAppointment) + " TO FIREBASE");
+            ref.$push({title: $scope.newAppointment.name})
         };
-  });
+    }]);

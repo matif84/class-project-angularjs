@@ -6,4 +6,8 @@
                ng-model="newAppointment.name">
     </div>
     <button class="btn btn-primary" type="submit">Create Appointment</button>
+
+    <ul>
+        <li ng-repeat="message in messages">{{message.value}}</li>
+    </ul>
 </form>
