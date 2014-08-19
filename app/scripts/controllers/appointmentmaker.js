@@ -17,10 +17,17 @@ angular.module('Appointment1app')
 
         $scope.newAppointment = {
             name: ""
+            email: ""
+            notes: ""
         };
+
+
+
 
         //Check out https://github.com/tewen/angular-fire-polls
         $scope.onSubmitAppointment = function () {
             ref.$push({title: $scope.newAppointment.name})
+            ref.$push({title: $scope.newAppointment.email})
+            ref.$push({title: $scope.newAppointment.notes})
         };
     }]);
