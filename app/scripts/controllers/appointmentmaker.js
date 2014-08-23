@@ -16,9 +16,9 @@ angular.module('Appointment1app')
         $scope.messages = ref.$asArray();
 
         $scope.newAppointment = {
-            name: "",
-            email: "",
-            notes: ""
+            name: '',
+            email: '',
+            notes: ''
         };
 
         //Check out https://github.com/tewen/angular-fire-polls

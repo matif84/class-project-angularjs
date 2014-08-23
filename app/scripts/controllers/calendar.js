@@ -11,7 +11,7 @@ angular.module('Appointment1app')
   .controller('CalendarCtrl', function ($scope) {
 
         function dayClick() {
-            console.log("DAY WAS CLICKED");
+            console.log('DAY WAS CLICKED');
         }
 
         function eventDrop() {
