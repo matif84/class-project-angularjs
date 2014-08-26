@@ -8,21 +8,11 @@
  * Controller of the appointment1App
  */
 angular.module('Appointment1app')
-  .controller('CalendarCtrl', function ($scope) {
+    .controller('CalendarCtrl', function ($scope) {
 
-
-  
 
         function dayClick() {
-debugger
-//             $scope.displays = {
-//     form: 'appointment-maker.html',
-//     date: 'calendar.html',
-    
-// };
-
-    $scope.myTemplate = 'appointment-maker.html'
-  
+            $scope.templates.myTemplate = "views/appointment-maker.html";
         }
 
         function eventDrop() {
@@ -34,15 +24,12 @@ debugger
         }
 
 
-              
-
-
-       $scope.eventSources = [];
+        $scope.eventSources = [];
         $scope.uiConfig = {
-            calendar:{
+            calendar: {
                 height: 450,
                 editable: true,
-                header:{
+                header: {
                     left: 'month basicWeek basicDay agendaWeek agendaDay',
                     center: 'title',
                     right: 'today prev,next'
@@ -52,7 +39,7 @@ debugger
                 eventResize: alertOnResize
             }
         };
-  });
+    });
 
 
 
