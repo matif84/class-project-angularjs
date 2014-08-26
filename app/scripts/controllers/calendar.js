@@ -10,8 +10,19 @@
 angular.module('Appointment1app')
   .controller('CalendarCtrl', function ($scope) {
 
+
+  
+
         function dayClick() {
-            console.log('DAY WAS CLICKED');
+debugger
+//             $scope.displays = {
+//     form: 'appointment-maker.html',
+//     date: 'calendar.html',
+    
+// };
+
+    $scope.myTemplate = 'appointment-maker.html'
+  
         }
 
         function eventDrop() {
@@ -22,7 +33,11 @@ angular.module('Appointment1app')
 
         }
 
-        $scope.eventSources = [];
+
+              
+
+
+       $scope.eventSources = [];
         $scope.uiConfig = {
             calendar:{
                 height: 450,
@@ -38,3 +53,6 @@ angular.module('Appointment1app')
             }
         };
   });
+
+
+

@@ -34,10 +34,20 @@
             <li><a ng-href="#">Contact</a></li>
         </ul>
         <h3 class="text-muted">appointment1</h3>
-    </div>
-    
+
     <ng-include src="'views/calendar.html'"></ng-include> 
     <ng-include src="'views/appointment-maker.html'"></ng-include>
+
+
+     <!--  <div style="clear: both;">
+    <h3 class="selection"
+      ng-class="value == myTemplate ? 'selected' : ''"
+      ng-repeat="(key, value) in displays" ng-click="onChooseDisplay(value)">{{key}}</h3>
+  </div>
+  <div style="clear: both;"> -->
+    <ng-include src="myTemplate"></ng-include>
+ <!--  </div>
+    </div> -->
     
 
     <div class="footer">
@@ -89,8 +99,8 @@
 <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
 <script src="bower_components/fullcalendar/fullcalendar.js"></script>
 <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
-<script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
 <script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
 <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
 <script src="bower_components/momentjs/moment.js"></script>
 <!-- endbower -->
