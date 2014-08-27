@@ -11,9 +11,10 @@
         <input class="form-control"
                ng-model="newAppointment.notes">
     </div>
-    <button class="btn btn-primary" type="submit">Create Appointment</button>
+    <button class="btn btn-primary" type="submit" 
+    ng-click="onCreateAppointment()">Create Appointment</button>
 
-    <ul>
+    <!-- <ul>
         <li ng-repeat="message in messages">{{message.value}}</li>
-    </ul>
+    </ul> -->
 </form>

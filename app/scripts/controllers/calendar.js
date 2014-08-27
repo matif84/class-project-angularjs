@@ -37,6 +37,9 @@ angular.module('Appointment1app')
                 dayClick: dayClick,
                 eventDrop: eventDrop,
                 eventResize: alertOnResize
+
+
+                
             }
         };
     });

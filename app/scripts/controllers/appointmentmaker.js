@@ -23,6 +23,21 @@ angular.module('Appointment1app')
 
         //Check out https://github.com/tewen/angular-fire-polls
         $scope.onSubmitAppointment = function () {
+
             ref.$push($scope.newAppointment);
+
+       //populate the data in the calendar
+
+            
         };
+
+        $scope.onCreateAppointment = function () {
+
+          $scope.templates.myTemplate = "views/calendar.html";
+
+        };
+
     }]);
+
+
+
